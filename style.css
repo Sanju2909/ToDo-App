@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+}
+
+.todo-app{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.todo-app h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2575fc;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.row input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.row button{
+    background:#2575fc;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.row button:hover{
+    background:#0d5be1;
+}
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    font-weight:600;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.stats span{
+    color:#2575fc;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#f5f5f5;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+}
+
+li:hover{
+    background:#e9ecef;
+}
+
+.completed span{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.actions button{
+    margin-left:6px;
+    border:none;
+    padding:8px 10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.complete-btn{
+    background:#28a745;
+    color:white;
+}
+
+.edit-btn{
+    background:#ffc107;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    gap:10px;
+}
+
+.buttons button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    cursor:pointer;
+}
+
+#clearCompleted{
+    background:#ff9800;
+}
+
+#clearAll{
+    background:#dc3545;
+}
+
+@media(max-width:600px){
+
+.stats{
+    flex-direction:column;
+}
+
+.row{
+    flex-direction:column;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+}

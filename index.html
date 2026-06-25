@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="todo-app">
+
+            <h1>
+
+                <i class="fa-solid fa-list-check"></i>
+
+                To-Do List
+
+            </h1>
+
+            <!-- Input -->
+
+            <div class="row">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task...">
+
+                <button id="addBtn">
+
+                    Add
+
+                </button>
+
+            </div>
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search task...">
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="stats">
+
+                <p>Total Tasks :
+                    <span id="totalTasks">0</span>
+                </p>
+
+                <p>Completed :
+                    <span id="completedTasks">0</span>
+                </p>
+
+                <p>Pending :
+                    <span id="pendingTasks">0</span>
+                </p>
+
+            </div>
+
+            <!-- Task List -->
+
+            <ul id="taskList">
+
+            </ul>
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button id="clearCompleted">
+
+                    Clear Completed
+
+                </button>
+
+                <button id="clearAll">
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
